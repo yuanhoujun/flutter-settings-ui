@@ -142,7 +142,7 @@ class IOSSettingsTileState extends State<IOSSettingsTile> {
       children: [
         if (widget.trailing != null)
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 6),
             child: IconTheme(
               data: IconTheme.of(context).copyWith(
                 color: widget.enabled
@@ -163,7 +163,7 @@ class IOSSettingsTileState extends State<IOSSettingsTile> {
           ),
         if (widget.tileType == SettingsTileType.navigationTile)
           Padding(
-            padding: const EdgeInsetsDirectional.only(start: 6, end: 2),
+            padding: const EdgeInsetsDirectional.only(start: 0, end: 0),
             child: IconTheme(
               data: IconTheme.of(context)
                   .copyWith(color: theme.themeData.leadingIconsColor),
@@ -240,7 +240,7 @@ class IOSSettingsTileState extends State<IOSSettingsTile> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsetsDirectional.only(end: 16),
+                    padding: const EdgeInsetsDirectional.only(end: 10),
                     child: Row(
                       children: [
                         Expanded(

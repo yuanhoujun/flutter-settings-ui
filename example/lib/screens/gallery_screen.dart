@@ -18,6 +18,8 @@ class GalleryScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Gallery')),
       body: SettingsList(
+        platform: DevicePlatform.macOS,
+        applicationType: ApplicationType.cupertino,
         sections: [
           SettingsSection(
             title: const Text('General'),
